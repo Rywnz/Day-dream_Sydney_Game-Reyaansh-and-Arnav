@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bo64mt4i7cy34"]
 
-[ext_resource type="SpriteFrames" path="res://animations/" id="1_xvqb4"]
+[ext_resource type="SpriteFrames" uid="uid://cg7cfkgdf8b21" path="res://animations/sprite frames.tres" id="1_jf4ev"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkgxh"]
 size = Vector2(13, 63.5)
@@ -11,10 +11,11 @@ position = Vector2(13, 12)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visibility_layer = 1023
 scale = Vector2(2.21875, 2.21875)
-sprite_frames = ExtResource("1_xvqb4")
+sprite_frames = ExtResource("1_jf4ev")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.230816
+frame = 6
+frame_progress = 0.530696
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.5, 41.75)
