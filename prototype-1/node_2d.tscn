@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5c2pvlpivcck"]
+[gd_scene load_steps=3 format=3 uid="uid://dbi067ivwkltl"]
 
-[ext_resource type="Script" path="res://sol.gd" id="1_d21u7"]
+[ext_resource type="Script" uid="uid://b4j6wrtjxo0nc" path="res://sol.gd" id="1_d21u7"]
+[ext_resource type="TileSet" uid="uid://dd8cqs7ypv8rj" path="res://assets/tilesets/castle.tres" id="2_0e48y"]
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-7.0]
@@ -11,3 +12,10 @@ script = ExtResource("1_d21u7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sol"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="sol"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Node"]
+tile_set = ExtResource("2_0e48y")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 131074, 6, 1, 131074, 6, 2, 131074, 6, 65539, 131074, 6, 131074, 131074, 6, 65538, 131074, 6, 3, 131074, 6, 4, 131074, 6, 65540, 131074, 6, 65541, 131074, 6, 65542, 131074, 6, 131077, 131074, 6, 196613, 131074, 6, 196612, 131074, 6, 131076, 131074, 6, 5, 131074, 6, 6, 131074, 6, -65530, 131074, 6)
