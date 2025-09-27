@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bo64mt4i7cy34"]
+[gd_scene load_steps=3 format=3 uid="uid://cgmrue52d88cn"]
 
 [ext_resource type="SpriteFrames" uid="uid://cg7cfkgdf8b21" path="res://animations/sprite frames.tres" id="1_jf4ev"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkgxh"]
-size = Vector2(13, 63.5)
+size = Vector2(8.5, 15)
 
 [node name="sol" type="CharacterBody2D"]
 position = Vector2(13, 12)
@@ -11,13 +11,13 @@ position = Vector2(13, 12)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visibility_layer = 1023
 texture_filter = 1
-scale = Vector2(2.21875, 2.21875)
+scale = Vector2(0.5, 0.5)
 sprite_frames = ExtResource("1_jf4ev")
 animation = &"idle"
 autoplay = "idle"
-frame = 6
-frame_progress = 0.530696
+frame = 2
+frame_progress = 0.12969814
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.5, 41.75)
+position = Vector2(-6, 8)
 shape = SubResource("RectangleShape2D_dkgxh")
