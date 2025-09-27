@@ -13,10 +13,10 @@ visibility_layer = 1023
 texture_filter = 1
 scale = Vector2(0.5, 0.5)
 sprite_frames = ExtResource("1_jf4ev")
-animation = &"idle"
+animation = &"jump"
 autoplay = "idle"
-frame = 2
-frame_progress = 0.12969814
+frame = 3
+frame_progress = 0.39939964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-6, 8)
