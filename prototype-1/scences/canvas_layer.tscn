@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cb0yvwi1qxn45"]
+
+[ext_resource type="Script" path="res://life_bar.gd" id="1_kgyb7"]
+
+[sub_resource type="Theme" id="Theme_t385h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ybdg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0h0u"]
+bg_color = Color(0.992157, 0.00392157, 0.203922, 1)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Life bar" type="ProgressBar" parent="."]
+anchors_preset = -1
+anchor_left = 0.001
+anchor_right = 0.178
+anchor_bottom = 0.057
+offset_left = -0.152
+offset_top = 1.0
+offset_right = 0.944
+offset_bottom = 0.0639992
+theme = SubResource("Theme_t385h")
+theme_override_colors/font_color = Color(0.038488, 0.518635, 0.817154, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_8ybdg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_r0h0u")
+value = 100.0
+rounded = true
+fill_mode = 1
+show_percentage = false
+script = ExtResource("1_kgyb7")

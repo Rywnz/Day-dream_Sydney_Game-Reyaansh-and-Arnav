@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://hq4t1odqiko6"]
+
+[ext_resource type="Texture2D" uid="uid://dny5d6nc0abqj" path="res://assets/GAME OVERa heading.png" id="1_44vsa"]
+
+[node name="death" type="Node2D"]
+
+[node name="GameOveRaHeading" type="Sprite2D" parent="."]
+position = Vector2(-0.649975, -2)
+scale = Vector2(0.597552, 0.602778)
+texture = ExtResource("1_44vsa")
+
+[node name="Camera2D" type="Camera2D" parent="."]
