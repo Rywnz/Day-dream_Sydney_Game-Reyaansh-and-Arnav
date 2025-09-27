@@ -5,16 +5,18 @@
 [ext_resource type="PackedScene" uid="uid://bo64mt4i7cy34" path="res://scences/sol.tscn" id="3_rmocp"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_1pdhh")
 metadata/_edit_vertical_guides_ = [-7.0]
 
 [node name="Node" type="Node" parent="."]
 
 [node name="TileMap" type="TileMap" parent="Node"]
+texture_filter = 1
 tile_set = ExtResource("2_xli46")
 format = 2
+layer_0/tile_data = PackedInt32Array(655349, 2, 0, 655350, 65538, 0, 655351, 65538, 0, 655352, 65538, 0, 655353, 65538, 0, 655354, 65538, 0, 655355, 65538, 0, 655356, 65538, 0, 655357, 65538, 0, 655358, 65538, 0, 655359, 65538, 0, 589824, 65538, 0, 589825, 65538, 0, 589826, 65538, 0, 589827, 65538, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="sol" parent="." instance=ExtResource("3_rmocp")]
-position = Vector2(-79, 46)
+position = Vector2(-87, 70)
+script = ExtResource("1_1pdhh")
