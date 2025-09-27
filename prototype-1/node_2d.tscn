@@ -1,10 +1,5 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5c2pvlpivcck"]
-
-[ext_resource type="Texture2D" uid="uid://balfusihdlku" path="res://icon.svg" id="1_hphyx"]
+[gd_scene format=3 uid="uid://dbi067ivwkltl"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(315, 200.5)
-scale = Vector2(3.0625, 1.72656)
-texture = ExtResource("1_hphyx")
+[node name="Sprite2D2" type="Sprite2D" parent="."]
