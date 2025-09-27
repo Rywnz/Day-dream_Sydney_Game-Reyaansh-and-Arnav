@@ -1,5 +1,13 @@
-[gd_scene format=3 uid="uid://dbi067ivwkltl"]
+[gd_scene load_steps=2 format=3 uid="uid://dbi067ivwkltl"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y32ns"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(315, 200.5)
+scale = Vector2(3.0625, 1.72656)
+texture = SubResource("CompressedTexture2D_y32ns")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
