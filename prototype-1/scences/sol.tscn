@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo64mt4i7cy34"]
+
+[ext_resource type="SpriteFrames" path="res://assets/" id="1_q0s4n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dkgxh"]
+size = Vector2(13, 63.5)
+
+[node name="sol" type="CharacterBody2D"]
+position = Vector2(13, 12)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visibility_layer = 1023
+scale = Vector2(2.21875, 2.21875)
+sprite_frames = ExtResource("1_q0s4n")
+animation = &"idle"
+frame_progress = 0.998481
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 41.75)
+shape = SubResource("RectangleShape2D_dkgxh")
