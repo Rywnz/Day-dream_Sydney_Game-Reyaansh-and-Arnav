@@ -42,10 +42,6 @@ tile_set = ExtResource("2_0e48y")
 
 [node name="sol" parent="." instance=ExtResource("2_epypp")]
 position = Vector2(-383, 57)
-speed = null
-jump_velocity = null
-gravity = null
-wall_jump_velocity = null
 
 [node name="Camera2D" type="Camera2D" parent="sol"]
 position = Vector2(1.01924e-05, -2.54313e-06)

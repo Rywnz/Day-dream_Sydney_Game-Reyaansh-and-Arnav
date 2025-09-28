@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var jump_velocity: float = -400.0
 @export var gravity: float = 900.0
 @export var wall_jump_velocity: Vector2 = Vector2(250, -400)
+@onready var run_sound: AudioStreamPlayer2D = $run_sound
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite
 @onready var left_wall_check: RayCast2D = $check_left
@@ -41,10 +42,16 @@ func _physics_process(delta: float) -> void:
 
 	if not is_on_floor():
 		sprite.play("jump")
+		if run_sound.playing:
+			run_sound.stop()
 	elif direction != 0:
 		sprite.play("RUN")
+		if not run_sound.playing:
+			run_sound.play()
 	else:
 		sprite.play("idle")
+		if run_sound.playing:
+			run_sound.stop()
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("go_to_menu"):
