@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="prototype 1"
-run/main_scene="uid://fo0xjo7kdnp8"
-config/features=PackedStringArray("4.5", "Forward Plus")
+run/main_scene="res://scences/node_2d.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [input]
@@ -38,4 +38,4 @@ jump={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.12225223, 0.12225225, 0.12225217, 1)
+environment/defaults/default_clear_color=Color(0.122252, 0.122252, 0.122252, 1)

@@ -3,7 +3,7 @@
 [ext_resource type="SpriteFrames" uid="uid://cg7cfkgdf8b21" path="res://animations/sprite frames.tres" id="1_jf4ev"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkgxh"]
-size = Vector2(8.333334, 12.75)
+size = Vector2(8.33333, 12.75)
 
 [node name="sol" type="CharacterBody2D"]
 position = Vector2(13, 12)
@@ -17,8 +17,8 @@ sprite_frames = ExtResource("1_jf4ev")
 animation = &"jump"
 autoplay = "idle"
 frame = 3
-frame_progress = 0.39939964
+frame_progress = 0.3994
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-6.833334, 9.708336)
+position = Vector2(-6.83333, 9.70834)
 shape = SubResource("RectangleShape2D_dkgxh")
