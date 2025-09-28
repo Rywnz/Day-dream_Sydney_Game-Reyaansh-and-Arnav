@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=4 uid="uid://hawrrbm7gs0q"]
+[gd_scene load_steps=7 format=4 uid="uid://0iyloftbpfw1"]
 
-[ext_resource type="PackedScene" path="res://scences/spike.tscn" id="1_ymt6k"]
+[ext_resource type="PackedScene" uid="uid://dej2quld2eo7" path="res://scences/spike.tscn" id="1_ymt6k"]
 [ext_resource type="TileSet" uid="uid://dd8cqs7ypv8rj" path="res://assets/tilesets/castle.tres" id="2_ftivd"]
 [ext_resource type="PackedScene" uid="uid://cgmrue52d88cn" path="res://scences/sol.tscn" id="3_ftivd"]
+[ext_resource type="PackedScene" uid="uid://cfvjtk7j4fq28" path="res://scences/teleporter_and_sacrifice.tscn" id="4_hrpb2"]
+[ext_resource type="Script" path="res://scences/kill_zone.gd" id="5_fn3ea"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2vxh3"]
+distance = -883.0
 
 [node name="World1" type="Node2D"]
-
-[node name="Area2D" parent="." instance=ExtResource("1_ymt6k")]
-position = Vector2(136, 10)
 
 [node name="Area2D2" parent="." instance=ExtResource("1_ymt6k")]
 position = Vector2(1038, 232)
@@ -31,4 +33,18 @@ tile_set = ExtResource("2_ftivd")
 [node name="TileMapLayer2" type="TileMapLayer" parent="Node/TileMap"]
 
 [node name="sol" parent="." instance=ExtResource("3_ftivd")]
-position = Vector2(73, -10)
+position = Vector2(71, 7)
+
+[node name="Camera2D" type="Camera2D" parent="sol"]
+position = Vector2(0.666667, 0)
+zoom = Vector2(3.5, 3.5)
+
+[node name="teleporter and sacrifice" parent="." instance=ExtResource("4_hrpb2")]
+position = Vector2(868, 265)
+
+[node name="kill zone" type="Area2D" parent="."]
+script = ExtResource("5_fn3ea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill zone"]
+position = Vector2(243, 91)
+shape = SubResource("WorldBoundaryShape2D_2vxh3")
