@@ -47,3 +47,8 @@ func _physics_process(delta: float) -> void:
 		sprite.play("RUN")
 	else:
 		sprite.play("idle")
+		
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("go_to_menu"):
+		print("Esc pressed!")  # Debug line
+		get_tree().change_scene_to_file("res://scences/main_menu.tscn")

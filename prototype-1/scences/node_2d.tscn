@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=4 uid="uid://crpsxb3trk8ai"]
+[gd_scene load_steps=5 format=4 uid="uid://bwxh17pnl2ax3"]
 
 [ext_resource type="TileSet" uid="uid://dd8cqs7ypv8rj" path="res://assets/tilesets/castle.tres" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://cgmrue52d88cn" path="res://scences/sol.tscn" id="2_epypp"]
@@ -37,10 +37,10 @@ tile_map_data = PackedByteArray("AAAAAAEAAgAJAAsAAAABAAAAAgAKAAoAAAABAAEAAgAKAAs
 tile_set = ExtResource("2_0e48y")
 
 [node name="sol" parent="." instance=ExtResource("2_epypp")]
-position = Vector2(48, 555)
+position = Vector2(-377, 61)
 
 [node name="Camera2D" type="Camera2D" parent="sol"]
-position = Vector2(0, -5.96046e-08)
+position = Vector2(1.01924e-05, -2.54313e-06)
 zoom = Vector2(3.5, 3.5)
 
 [node name="Area2D" parent="." instance=ExtResource("2_gk3if")]
@@ -117,19 +117,19 @@ position = Vector2(-367, 570)
 
 [node name="Area2D41" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(100, 407)
-rotation = 1.5707964
+rotation = 1.5708
 
 [node name="Area2D42" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(100, 392)
-rotation = 1.5707964
+rotation = 1.5708
 
 [node name="Area2D43" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(99, 377)
-rotation = 1.5707964
+rotation = 1.5708
 
 [node name="Area2D44" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(100, 363)
-rotation = 1.5707964
+rotation = 1.5708
 
 [node name="Area2D20" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(-126, 458)
