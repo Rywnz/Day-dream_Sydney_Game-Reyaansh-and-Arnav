@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://dej2quld2eo7"]
+[gd_scene load_steps=5 format=3 uid="uid://u56450htjdga"]
 
 [ext_resource type="Texture2D" uid="uid://djojtm6gyskdv" path="res://assets/16-bit-spike-Sheet.png" id="1_ek7v8"]
-[ext_resource type="Script" path="res://scripts/area_2d.gd" id="1_xwsjn"]
+[ext_resource type="Script" uid="uid://dvtc6ck7xo6ns" path="res://scripts/area_2d.gd" id="1_xwsjn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t76xp"]
-size = Vector2(3, 4.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_no61k"]
+size = Vector2(4, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aa2o0"]
+size = Vector2(10, 7)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_xwsjn")
@@ -14,8 +17,12 @@ texture_filter = 1
 texture = ExtResource("1_ek7v8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 5)
-shape = SubResource("RectangleShape2D_t76xp")
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_no61k")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4.5)
+shape = SubResource("RectangleShape2D_aa2o0")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
