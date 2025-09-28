@@ -1,7 +1,14 @@
-[gd_scene format=3 uid="uid://di0ukhujkdupq"]
+[gd_scene load_steps=2 format=3 uid="uid://di0ukhujkdupq"]
+
+[ext_resource type="Texture2D" uid="uid://pfnorq6pjnjb" path="res://assets/YOU SACFRIFICED YOURSELF.png" id="1_6opru"]
 
 [node name="choice_one_chosen" type="Node2D"]
 
 [node name="choice_one_ending" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("1_6opru")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(959, 546)
+zoom = Vector2(0.6, 0.6)
