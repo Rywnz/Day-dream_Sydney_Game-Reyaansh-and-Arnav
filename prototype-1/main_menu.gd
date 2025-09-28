@@ -18,4 +18,8 @@ func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://scences/world1.tscn")  # Make sure this path is correct
 
 func _on_quit_pressed() -> void:
-	get_tree().change_scene_to_file("res://scences/world1.tscn") 
+	get_tree().quit()
+	
+	
+	
+	
