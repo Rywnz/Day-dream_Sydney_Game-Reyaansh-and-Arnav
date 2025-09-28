@@ -1,10 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://hawrrbm7gs0q"]
+[gd_scene load_steps=7 format=4 uid="uid://0iyloftbpfw1"]
 
-[ext_resource type="PackedScene" path="res://scences/spike.tscn" id="1_ymt6k"]
+[ext_resource type="PackedScene" uid="uid://dej2quld2eo7" path="res://scences/spike.tscn" id="1_ymt6k"]
 [ext_resource type="TileSet" uid="uid://dd8cqs7ypv8rj" path="res://assets/tilesets/castle.tres" id="2_ftivd"]
 [ext_resource type="PackedScene" uid="uid://cgmrue52d88cn" path="res://scences/sol.tscn" id="3_ftivd"]
-[ext_resource type="PackedScene" path="res://scences/teleporter_and_sacrifice.tscn" id="4_hrpb2"]
-[ext_resource type="Script" uid="uid://b0c2u3s2qhqgs" path="res://scences/kill_zone.gd" id="5_fn3ea"]
+[ext_resource type="PackedScene" uid="uid://cfvjtk7j4fq28" path="res://scences/teleporter_and_sacrifice.tscn" id="4_hrpb2"]
+[ext_resource type="Script" path="res://scences/kill_zone.gd" id="5_fn3ea"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2vxh3"]
 distance = -883.0
