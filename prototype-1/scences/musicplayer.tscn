@@ -7,6 +7,6 @@
 
 [node name="bgm" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1_e8g6u")
-volume_db = 24.0
+volume_db = 7.845
 parameters/looping = false
 script = ExtResource("2_f3wdy")
