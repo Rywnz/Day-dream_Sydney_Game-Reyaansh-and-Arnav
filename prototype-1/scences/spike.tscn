@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://u56450htjdga"]
+[gd_scene load_steps=5 format=3 uid="uid://dej2quld2eo7"]
 
 [ext_resource type="Texture2D" uid="uid://djojtm6gyskdv" path="res://assets/16-bit-spike-Sheet.png" id="1_ek7v8"]
-[ext_resource type="Script" uid="uid://dvtc6ck7xo6ns" path="res://scripts/area_2d.gd" id="1_xwsjn"]
+[ext_resource type="Script" path="res://scripts/area_2d.gd" id="1_xwsjn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_no61k"]
 size = Vector2(4, 10)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://hq4t1odqiko6"]
 
-[ext_resource type="Texture2D" uid="uid://dny5d6nc0abqj" path="res://assets/GAME OVERa heading.png" id="1_44vsa"]
+[ext_resource type="Texture2D" uid="uid://dny5d6nc0abqj" path="res://assets/menu.png" id="1_44vsa"]
 
 [node name="death" type="Node2D"]
 

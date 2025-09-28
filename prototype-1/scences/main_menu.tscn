@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3fuh6g1dl6fl"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_gv508"]
+[ext_resource type="Texture2D" uid="uid://dny5d6nc0abqj" path="res://assets/menu.png" id="2_ef30a"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchor_right = 0.012
+offset_right = 26.176
+offset_bottom = 40.0
+script = ExtResource("1_gv508")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1776.0
+offset_top = 407.0
+offset_right = 3696.0
+offset_bottom = 1487.0
+texture = ExtResource("2_ef30a")
+
+[node name="title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2054.0
+offset_top = 584.0
+offset_right = 3407.0
+offset_bottom = 831.0
+theme_override_font_sizes/font_size = 100
+text = "CAN U BEAT IT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.04
+anchor_bottom = 0.028
+offset_left = 2248.0
+offset_top = 958.0
+offset_right = 3145.4
+offset_bottom = 1168.88
+alignment = 1
+
+[node name="start" type="Button" parent="MenuButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "START
+"
+
+[node name="quit" type="Button" parent="MenuButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "QUIT"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(2744, 937)
+zoom = Vector2(0.6, 0.6)
