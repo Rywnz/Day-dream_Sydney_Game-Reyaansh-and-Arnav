@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cgmrue52d88cn"]
+[gd_scene load_steps=4 format=3 uid="uid://cgmrue52d88cn"]
 
 [ext_resource type="SpriteFrames" uid="uid://cg7cfkgdf8b21" path="res://animations/sprite frames.tres" id="1_jf4ev"]
+[ext_resource type="Script" path="res://scripts/sol.gd" id="1_ocxea"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkgxh"]
 size = Vector2(8.33333, 12.75)
@@ -8,8 +9,9 @@ size = Vector2(8.33333, 12.75)
 [node name="sol" type="CharacterBody2D"]
 position = Vector2(13, 12)
 scale = Vector2(1.5, 1.5)
+script = ExtResource("1_ocxea")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 visibility_layer = 1023
 texture_filter = 1
 scale = Vector2(0.5, 0.5)
