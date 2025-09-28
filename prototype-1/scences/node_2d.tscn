@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://bwxh17pnl2ax3"]
+[gd_scene load_steps=7 format=4 uid="uid://xojv3b3hi71y"]
 
 [ext_resource type="TileSet" uid="uid://dd8cqs7ypv8rj" path="res://assets/tilesets/castle.tres" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://cgmrue52d88cn" path="res://scences/sol.tscn" id="2_epypp"]
-[ext_resource type="PackedScene" uid="uid://dej2quld2eo7" path="res://scences/spike.tscn" id="2_gk3if"]
-[ext_resource type="Script" path="res://scences/kill_zone.gd" id="4_orrju"]
+[ext_resource type="PackedScene" path="res://scences/spike.tscn" id="2_gk3if"]
+[ext_resource type="Script" uid="uid://b0c2u3s2qhqgs" path="res://scences/kill_zone.gd" id="4_orrju"]
 
 [sub_resource type="Environment" id="Environment_epypp"]
 background_mode = 1
