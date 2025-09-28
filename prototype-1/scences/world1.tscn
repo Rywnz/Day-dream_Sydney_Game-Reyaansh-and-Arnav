@@ -40,7 +40,7 @@ position = Vector2(71, 7)
 
 [node name="Camera2D" type="Camera2D" parent="sol"]
 position = Vector2(0.666667, 0)
-zoom = Vector2(3.5, 3.5)
+zoom = Vector2(2.5, 2.5)
 
 [node name="teleporter and sacrifice" parent="." instance=ExtResource("4_hrpb2")]
 position = Vector2(868, 265)
