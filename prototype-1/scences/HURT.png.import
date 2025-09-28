@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djojtm6gyskdv"
-path="res://.godot/imported/16-bit-spike-Sheet.png-a7aebad31305908e253ea2f301541798.ctex"
+uid="uid://djmlrllpnihsn"
+path="res://.godot/imported/HURT.png-2f5fb26068a5b5b44dd8e60663f769c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/16-bit-spike-Sheet.png"
-dest_files=["res://.godot/imported/16-bit-spike-Sheet.png-a7aebad31305908e253ea2f301541798.ctex"]
+source_file="res://scences/HURT.png"
+dest_files=["res://.godot/imported/HURT.png-2f5fb26068a5b5b44dd8e60663f769c3.ctex"]
 
 [params]
 

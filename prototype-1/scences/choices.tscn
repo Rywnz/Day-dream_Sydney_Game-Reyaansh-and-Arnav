@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://whrpscovmdhb"]
+
+[ext_resource type="Texture2D" uid="uid://dny5d6nc0abqj" path="res://assets/menu.png" id="1_ibv24"]
+[ext_resource type="Script" path="res://scences/choices.gd" id="1_wrg00"]
+
+[node name="choices" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 300.0
+offset_top = 145.0
+offset_right = 340.0
+offset_bottom = 185.0
+script = ExtResource("1_wrg00")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 509.0
+offset_right = 2322.0
+offset_bottom = 1589.0
+texture = ExtResource("1_ibv24")
+
+[node name="title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 721.0
+offset_right = 2135.0
+offset_bottom = 926.0
+theme_override_font_sizes/font_size = 120
+text = "WHO WILL YOU SACRIFICE
+"
+
+[node name="choice_buttons" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 723.0
+offset_top = 1077.0
+offset_right = 2048.0
+offset_bottom = 1457.0
+
+[node name="choice_1" type="Button" parent="choice_buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "Sacrifice yourself to save the ninja"
+
+[node name="Choice_2" type="Button" parent="choice_buttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "Sacrifice the ninja to save yourself
+"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1365, 1053)
+zoom = Vector2(0.6, 0.6)

@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=4 uid="uid://bwxh17pnl2ax3"]
+[gd_scene load_steps=10 format=4 uid="uid://bwxh17pnl2ax3"]
 
 [ext_resource type="TileSet" uid="uid://dd8cqs7ypv8rj" path="res://assets/tilesets/castle.tres" id="1_6yq3l"]
 [ext_resource type="PackedScene" uid="uid://cgmrue52d88cn" path="res://scences/sol.tscn" id="2_soc2w"]
 [ext_resource type="PackedScene" uid="uid://dej2quld2eo7" path="res://scences/spike.tscn" id="3_p8pwf"]
 [ext_resource type="Script" path="res://scences/kill_zone.gd" id="4_mamtw"]
+[ext_resource type="Script" path="res://scences/area_2d_46.gd" id="5_bmfhb"]
+[ext_resource type="Texture2D" uid="uid://djmlrllpnihsn" path="res://scences/HURT.png" id="5_pn1sl"]
 
 [sub_resource type="Environment" id="Environment_epypp"]
 background_mode = 1
@@ -11,6 +13,9 @@ background_energy_multiplier = 0.8
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_xk2ka"]
 distance = -883.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7fr2"]
+size = Vector2(15.114, 32.1093)
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-7.0]
@@ -41,7 +46,7 @@ tile_map_data = PackedByteArray("AAAAAAEAAgAJAAsAAAABAAAAAgAKAAoAAAABAAEAAgAKAAs
 tile_set = ExtResource("1_6yq3l")
 
 [node name="sol" parent="." instance=ExtResource("2_soc2w")]
-position = Vector2(-383, 57)
+position = Vector2(-369, 58)
 
 [node name="Camera2D" type="Camera2D" parent="sol"]
 position = Vector2(1.01924e-05, -2.54313e-06)
@@ -192,3 +197,17 @@ script = ExtResource("4_mamtw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kill zone"]
 position = Vector2(243, 91)
 shape = SubResource("WorldBoundaryShape2D_xk2ka")
+
+[node name="choice_activation" type="Area2D" parent="."]
+script = ExtResource("5_bmfhb")
+
+[node name="ninja" type="Sprite2D" parent="choice_activation"]
+texture_filter = 1
+position = Vector2(-1036, 603)
+rotation = -1.54712
+texture = ExtResource("5_pn1sl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="choice_activation"]
+position = Vector2(-1036, 603.465)
+rotation = -1.54712
+shape = SubResource("RectangleShape2D_b7fr2")

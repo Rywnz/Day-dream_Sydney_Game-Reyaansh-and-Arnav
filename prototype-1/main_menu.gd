@@ -1,21 +1,21 @@
 extends Control
 
-@onready var start_button: Button = $MenuButtons/start
-@onready var quit_button: Button = $MenuButtons/quit
+@onready var choice_1: Button = $MenuButtons/start
+@onready var choice_2: Button = $MenuButtons/quit
 
 func _ready() -> void:
-	if start_button:
-		start_button.pressed.connect(_on_start_pressed)
+	if choice_1:
+		choice_1.pressed.connect(_on_start_pressed)
 	else:
-		print("Start button not found!")
+		print("choice 1 not found")
 
-	if quit_button:
-		quit_button.pressed.connect(_on_quit_pressed)
+	if choice_2:
+		choice_2.pressed.connect(_on_quit_pressed)
 	else:
-		print("Quit button not found!")
+		print("choice 2 not found")
 
 func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://scences/world1.tscn")  # Make sure this path is correct
 
 func _on_quit_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://scences/world1.tscn") 

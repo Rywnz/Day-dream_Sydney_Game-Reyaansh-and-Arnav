@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cgmrue52d88cn"]
 
 [ext_resource type="SpriteFrames" uid="uid://cg7cfkgdf8b21" path="res://animations/sprite frames.tres" id="1_jf4ev"]
-[ext_resource type="Script" uid="uid://bnieslyl1vowu" path="res://scripts/sol.gd" id="1_ocxea"]
+[ext_resource type="Script" path="res://scripts/sol.gd" id="1_ocxea"]
 [ext_resource type="AudioStream" uid="uid://disuldbqsljgd" path="res://audio/running-14658.mp3" id="3_rnokl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkgxh"]
