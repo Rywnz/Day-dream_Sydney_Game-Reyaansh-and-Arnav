@@ -42,25 +42,17 @@ tile_set = ExtResource("2_0e48y")
 
 [node name="sol" parent="." instance=ExtResource("2_epypp")]
 position = Vector2(-383, 57)
+speed = null
+jump_velocity = null
+gravity = null
+wall_jump_velocity = null
 
 [node name="Camera2D" type="Camera2D" parent="sol"]
 position = Vector2(1.01924e-05, -2.54313e-06)
 zoom = Vector2(3.5, 3.5)
 
-[node name="Area2D" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(243, 91)
-
 [node name="Area2D2" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(129, 43)
-
-[node name="Area2D3" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(340, 123)
-
-[node name="Area2D4" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(243, 155)
-
-[node name="Area2D5" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(341, 187)
 
 [node name="Area2D6" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(310, 267)

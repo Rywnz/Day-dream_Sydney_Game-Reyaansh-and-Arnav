@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsrji42j3jc5s"]
+
+[ext_resource type="AudioStream" uid="uid://bpvnspo6uxgcx" path="res://audio/suspense-creepy-ominous-ambience-14569.mp3" id="1_e8g6u"]
+[ext_resource type="Script" uid="uid://blisj8tigae16" path="res://scences/audio_stream_player_2d.gd" id="2_f3wdy"]
+
+[node name="Musicplayer" type="Node2D"]
+
+[node name="bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_e8g6u")
+volume_db = 24.0
+parameters/looping = false
+script = ExtResource("2_f3wdy")
