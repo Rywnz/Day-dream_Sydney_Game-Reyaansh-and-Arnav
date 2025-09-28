@@ -42,7 +42,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "Sacrifice yourself to save the ninja"
 
-[node name="Choice_2" type="Button" parent="choice_buttons"]
+[node name="choice_2" type="Button" parent="choice_buttons"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "Sacrifice the ninja to save yourself
