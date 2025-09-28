@@ -51,7 +51,7 @@ position = Vector2(-385, 57)
 
 [node name="Camera2D" type="Camera2D" parent="sol"]
 position = Vector2(1.01924e-05, -2.54313e-06)
-zoom = Vector2(3.5, 3.5)
+zoom = Vector2(2.5, 2.5)
 
 [node name="Area2D2" parent="." instance=ExtResource("3_p8pwf")]
 position = Vector2(129, 43)
@@ -73,9 +73,6 @@ position = Vector2(199, 267)
 
 [node name="Area2D14" parent="." instance=ExtResource("3_p8pwf")]
 position = Vector2(51, 267)
-
-[node name="Area2D18" parent="." instance=ExtResource("3_p8pwf")]
-position = Vector2(-250, 379)
 
 [node name="Area2D36" parent="." instance=ExtResource("3_p8pwf")]
 position = Vector2(-323, 570)
