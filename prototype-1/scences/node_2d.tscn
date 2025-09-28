@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=4 uid="uid://bwxh17pnl2ax3"]
+[gd_scene load_steps=7 format=4 uid="uid://bcqh0jxfksnrf"]
 
 [ext_resource type="TileSet" uid="uid://dd8cqs7ypv8rj" path="res://assets/tilesets/castle.tres" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://cgmrue52d88cn" path="res://scences/sol.tscn" id="2_epypp"]
 [ext_resource type="PackedScene" uid="uid://dej2quld2eo7" path="res://scences/spike.tscn" id="2_gk3if"]
-[ext_resource type="Script" path="res://scences/kill_zone.gd" id="4_orrju"]
+[ext_resource type="Script" uid="uid://b0c2u3s2qhqgs" path="res://scences/kill_zone.gd" id="4_orrju"]
 
 [sub_resource type="Environment" id="Environment_epypp"]
 background_mode = 1
@@ -41,150 +41,14 @@ tile_map_data = PackedByteArray("AAAAAAEAAgAJAAsAAAABAAAAAgAKAAoAAAABAAEAAgAKAAs
 tile_set = ExtResource("2_0e48y")
 
 [node name="sol" parent="." instance=ExtResource("2_epypp")]
-position = Vector2(-383, 57)
+position = Vector2(-388.00003, 55)
 
 [node name="Camera2D" type="Camera2D" parent="sol"]
 position = Vector2(1.01924e-05, -2.54313e-06)
 zoom = Vector2(3.5, 3.5)
 
-[node name="Area2D" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(243, 91)
-
-[node name="Area2D2" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(129, 43)
-
-[node name="Area2D3" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(340, 123)
-
-[node name="Area2D4" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(243, 155)
-
-[node name="Area2D5" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(341, 187)
-
-[node name="Area2D6" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(310, 267)
-
-[node name="Area2D7" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(300, 267)
-
-[node name="Area2D8" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(318, 267)
-
-[node name="Area2D9" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(327, 267)
-
-[node name="Area2D10" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(289, 267)
-
-[node name="Area2D11" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(278, 267)
-
-[node name="Area2D12" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(199, 267)
-
-[node name="Area2D13" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(127, 267)
-
-[node name="Area2D14" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(51, 267)
-
-[node name="Area2D15" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-91, 315)
-
-[node name="Area2D16" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-171, 347)
-
-[node name="Area2D17" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-251, 379)
-
-[node name="Area2D18" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-331, 411)
-
-[node name="Area2D19" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-444, 459)
-
-[node name="Area2D36" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-323, 570)
-
-[node name="Area2D37" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-307, 570)
-
-[node name="Area2D38" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-338, 570)
-
-[node name="Area2D39" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-353, 570)
-
-[node name="Area2D40" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-367, 570)
-
-[node name="Area2D41" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(100, 407)
-rotation = 1.5708
-
-[node name="Area2D42" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(100, 392)
-rotation = 1.5708
-
-[node name="Area2D43" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(99, 377)
-rotation = 1.5708
-
-[node name="Area2D44" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(100, 363)
-rotation = 1.5708
-
-[node name="Area2D20" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-126, 458)
-
 [node name="Area2D21" parent="." instance=ExtResource("2_gk3if")]
 position = Vector2(-111, 458)
-
-[node name="Area2D22" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-96, 458)
-
-[node name="Area2D23" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-83, 458)
-
-[node name="Area2D24" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-68, 458)
-
-[node name="Area2D25" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-55, 458)
-
-[node name="Area2D26" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-41, 458)
-
-[node name="Area2D27" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-27, 458)
-
-[node name="Area2D28" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-140, 458)
-
-[node name="Area2D29" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-154, 458)
-
-[node name="Area2D30" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-169, 458)
-
-[node name="Area2D31" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-183, 458)
-
-[node name="Area2D32" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-15, 458)
-
-[node name="Area2D33" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-1, 458)
-
-[node name="Area2D45" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(405, 586)
-
-[node name="Area2D34" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-197, 458)
-
-[node name="Area2D35" parent="." instance=ExtResource("2_gk3if")]
-position = Vector2(-211, 458)
 
 [node name="kill zone" type="Area2D" parent="."]
 script = ExtResource("4_orrju")
@@ -192,3 +56,156 @@ script = ExtResource("4_orrju")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kill zone"]
 position = Vector2(243, 91)
 shape = SubResource("WorldBoundaryShape2D_xk2ka")
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="Area2D" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(243, 91)
+
+[node name="Area2D2" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(129, 43)
+
+[node name="Area2D3" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(340, 123)
+
+[node name="Area2D4" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(243, 155)
+
+[node name="Area2D5" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(341, 187)
+
+[node name="Area2D6" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(310, 267)
+
+[node name="Area2D7" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(300, 267)
+
+[node name="Area2D8" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(318, 267)
+
+[node name="Area2D9" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(327, 267)
+
+[node name="Area2D10" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(289, 267)
+
+[node name="Area2D11" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(278, 267)
+
+[node name="Area2D12" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(199, 267)
+
+[node name="Area2D13" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(127, 267)
+
+[node name="Area2D14" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(51, 267)
+
+[node name="Area2D15" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-91, 315)
+
+[node name="Area2D16" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-171, 347)
+
+[node name="Area2D17" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-251, 379)
+
+[node name="Area2D18" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-331, 411)
+
+[node name="Area2D19" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-444, 459)
+
+[node name="Area2D36" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-323, 570)
+
+[node name="Area2D37" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-307, 570)
+
+[node name="Area2D38" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-338, 570)
+
+[node name="Area2D39" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-353, 570)
+
+[node name="Area2D40" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(-367, 570)
+
+[node name="Area2D41" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(100, 407)
+rotation = 1.5708
+
+[node name="Area2D43" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(99, 377)
+rotation = 1.5708
+
+[node name="Area2D44" parent="Node2" instance=ExtResource("2_gk3if")]
+position = Vector2(100, 363)
+rotation = 1.5708
+
+[node name="Area2D42" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(29, -0.00010681152)
+
+[node name="Area2D22" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.0007, 195.99966)
+rotation = -1.5708
+
+[node name="Area2D23" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00067, 182.99966)
+rotation = -1.5708
+
+[node name="Area2D24" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00061, 167.99966)
+rotation = -1.5708
+
+[node name="Area2D25" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00058, 154.99965)
+rotation = -1.5708
+
+[node name="Area2D26" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00052, 140.99965)
+rotation = -1.5708
+
+[node name="Area2D27" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00046, 126.99966)
+rotation = -1.5708
+
+[node name="Area2D28" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.000885, 239.99965)
+rotation = -1.5708
+
+[node name="Area2D29" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.000916, 253.99965)
+rotation = -1.5708
+
+[node name="Area2D30" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00098, 268.99963)
+rotation = -1.5708
+
+[node name="Area2D31" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00104, 282.99963)
+rotation = -1.5708
+
+[node name="Area2D32" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00043, 114.99966)
+rotation = -1.5708
+
+[node name="Area2D33" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00037, 100.99966)
+rotation = -1.5708
+
+[node name="Area2D45" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(222.9989, -305.00085)
+rotation = -1.5708
+
+[node name="Area2D34" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00107, 296.99963)
+rotation = -1.5708
+
+[node name="Area2D35" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.00113, 310.99963)
+rotation = -1.5708
+
+[node name="Area2D20" parent="Node2/Area2D44" instance=ExtResource("2_gk3if")]
+position = Vector2(95.000824, 225.99966)
+rotation = -1.5708
